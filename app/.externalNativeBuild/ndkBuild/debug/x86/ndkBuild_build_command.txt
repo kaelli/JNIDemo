@@ -1,0 +1,16 @@
+Executable : /Users/liwc/opt/android-sdk-macosx/ndk-bundle/ndk-build
+arguments : 
+NDK_PROJECT_PATH=null
+APP_BUILD_SCRIPT=/Users/liwc/Documents/kael/src/android/JNIDemo/app/src/main/jni/Android.mk
+APP_ABI=x86
+NDK_ALL_ABIS=x86
+NDK_DEBUG=1
+APP_PLATFORM=android-19
+NDK_OUT=/Users/liwc/Documents/kael/src/android/JNIDemo/app/build/intermediates/ndkBuild/debug/obj
+NDK_LIBS_OUT=/Users/liwc/Documents/kael/src/android/JNIDemo/app/build/intermediates/ndkBuild/debug/lib
+APP_SHORT_COMMANDS=false
+LOCAL_SHORT_COMMANDS=false
+-B
+-n
+jvmArgs : 
+

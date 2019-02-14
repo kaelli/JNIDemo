@@ -1,0 +1,23 @@
+{
+  "buildFiles": [
+    "/Users/liwc/Documents/kael/src/android/JNIDemo/app/src/main/jni/Android.mk"
+  ],
+  "cleanCommands": [
+    "/Users/liwc/opt/android-sdk-macosx/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/liwc/Documents/kael/src/android/JNIDemo/app/src/main/jni/Android.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-19 NDK_OUT\u003d/Users/liwc/Documents/kael/src/android/JNIDemo/app/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003d/Users/liwc/Documents/kael/src/android/JNIDemo/app/build/intermediates/ndkBuild/debug/lib clean"
+  ],
+  "libraries": {
+    "aplex-debug-x86": {
+      "buildCommand": "/Users/liwc/opt/android-sdk-macosx/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/liwc/Documents/kael/src/android/JNIDemo/app/src/main/jni/Android.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-19 NDK_OUT\u003d/Users/liwc/Documents/kael/src/android/JNIDemo/app/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003d/Users/liwc/Documents/kael/src/android/JNIDemo/app/build/intermediates/ndkBuild/debug/lib /Users/liwc/Documents/kael/src/android/JNIDemo/app/build/intermediates/ndkBuild/debug/obj/local/x86/libaplex.so",
+      "toolchain": "toolchain-x86",
+      "abi": "x86",
+      "artifactName": "aplex",
+      "files": [],
+      "output": "/Users/liwc/Documents/kael/src/android/JNIDemo/app/build/intermediates/ndkBuild/debug/obj/local/x86/libaplex.so"
+    }
+  },
+  "toolchains": {
+    "toolchain-x86": {}
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": []
+}

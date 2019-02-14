@@ -1,0 +1,10 @@
+rm -f /Users/liwc/Documents/kael/src/android/JNIDemo/app/build/intermediates/ndkBuild/release/lib/x86/*
+rm -f /Users/liwc/Documents/kael/src/android/JNIDemo/app/build/intermediates/ndkBuild/release/lib/x86/gdbserver
+rm -f /Users/liwc/Documents/kael/src/android/JNIDemo/app/build/intermediates/ndkBuild/release/lib/x86/gdb.setup
+mkdir -p /Users/liwc/Documents/kael/src/android/JNIDemo/app/build/intermediates/ndkBuild/release/obj/local/x86
+echo [x86] "SharedLibrary  ": "libaplex.so"
+/Users/liwc/opt/android-sdk-macosx/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ -Wl,-soname,libaplex.so -shared --sysroot=/Users/liwc/opt/android-sdk-macosx/ndk-bundle/platforms/android-19/arch-x86 -lgcc -Wl,--exclude-libs,libgcc.a -latomic -Wl,--exclude-libs,libatomic.a -target i686-none-linux-android19 -no-canonical-prefixes   -gcc-toolchain /Users/liwc/opt/android-sdk-macosx/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64   -Wl,--build-id -Wl,--no-undefined -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,--warn-shared-textrel -Wl,--fatal-warnings   -lc -lm -o /Users/liwc/Documents/kael/src/android/JNIDemo/app/build/intermediates/ndkBuild/release/obj/local/x86/libaplex.so
+mkdir -p /Users/liwc/Documents/kael/src/android/JNIDemo/app/build/intermediates/ndkBuild/release/lib/x86
+echo [x86] "Install        ": "libaplex.so => /Users/liwc/Documents/kael/src/android/JNIDemo/app/build/intermediates/ndkBuild/release/lib/x86/libaplex.so"
+install -p /Users/liwc/Documents/kael/src/android/JNIDemo/app/build/intermediates/ndkBuild/release/obj/local/x86/libaplex.so /Users/liwc/Documents/kael/src/android/JNIDemo/app/build/intermediates/ndkBuild/release/lib/x86/libaplex.so
+/Users/liwc/opt/android-sdk-macosx/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64/bin/i686-linux-android-strip --strip-unneeded  /Users/liwc/Documents/kael/src/android/JNIDemo/app/build/intermediates/ndkBuild/release/lib/x86/libaplex.so
